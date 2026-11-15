@@ -1,0 +1,56 @@
+{
+  "name": "@local/dsh-delete-conversation",
+  "version": "1.1.0",
+  "description": "Permanently delete a DeepSeek Harness session, including its local session log files, from the Web UI's session menu.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Kai-Dreamer",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "deepseek-harness",
+    "session",
+    "delete"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kai-Dreamer/dsh-delete-conversation.git"
+  },
+  "homepage": "https://github.com/Kai-Dreamer/dsh-delete-conversation#readme",
+  "bugs": {
+    "url": "https://github.com/Kai-Dreamer/dsh-delete-conversation/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "deletion.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-context-menu",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Delete session",
+    "description": "Adds a permanent Delete session action as the first row of a top-level session's \"...\" menu and asks for confirmation in a dialog. Unlike Archive, it deletes the session's local session log files from this device together with its subagent sessions and reminders, and the row disappears from the sidebar; the deletion cannot be undone. Running work in the session is stopped first, and the delete is refused only if that work cannot stop in time. Shared attachment files referenced by other sessions are not removed."
+  }
+}

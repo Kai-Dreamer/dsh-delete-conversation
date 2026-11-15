@@ -1,0 +1,4 @@
+# Insert the Delete Conversation plugin row above the stock composition.
+- insert:
+    - id: delete-conversation
+      name: '@local/dsh-delete-conversation'

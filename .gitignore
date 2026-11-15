@@ -1,0 +1,10 @@
+# Dependencies and build output are never published.
+node_modules/
+*.tgz
+
+# Local tooling noise.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
