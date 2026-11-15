@@ -9,6 +9,12 @@ is purged, and the Session leaves every Workspace account, so its row disappears
 from the sidebar. Subagent sessions created by the deleted Session are removed
 with it.
 
+## Screenshots
+
+| The session `...` menu | The confirmation dialog |
+| --- | --- |
+| ![Delete session as the first menu row](docs/menu.png) | ![Delete session confirmation dialog](docs/confirm.png) |
+
 ## Requirements
 
 - DeepSeek Harness (Desktop or `dsh web`) with the Plugin Manager available.
